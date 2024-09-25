@@ -49,6 +49,7 @@ La cadena de conexión a la base de datos está configurada en el archivo `app.c
 <connectionStrings>
     <add name="EmpresaTicketsDB" connectionString="Data Source=TU_SERVIDOR;Initial Catalog=TaskManagerDB;Integrated Security=True;" providerName="System.Data.SqlClient" />
 </connectionStrings>
+```
 
 ## Funcionalidades Detalladas
 
