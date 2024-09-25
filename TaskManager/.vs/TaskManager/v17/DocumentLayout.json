@@ -1,0 +1,318 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\ui\\vertareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|solutionrelative:ui\\vertareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\ui\\vertareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|solutionrelative:ui\\vertareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\ui\\asignartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|solutionrelative:ui\\asignartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\ui\\asignartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|solutionrelative:ui\\asignartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\ui\\agregarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|solutionrelative:ui\\agregarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\ui\\agregarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|solutionrelative:ui\\agregarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\ui\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|solutionrelative:ui\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\ui\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|solutionrelative:ui\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|solutionrelative:ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F353130C-A9B6-455A-A9F2-0A1BFB85ABEB}|UI\\UI.csproj|solutionrelative:ui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C803BED-619D-4F43-A8D4-04A88F45A3D1}|Entity\\Entity.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\entity\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C803BED-619D-4F43-A8D4-04A88F45A3D1}|Entity\\Entity.csproj|solutionrelative:entity\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C803BED-619D-4F43-A8D4-04A88F45A3D1}|Entity\\Entity.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\entity\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C803BED-619D-4F43-A8D4-04A88F45A3D1}|Entity\\Entity.csproj|solutionrelative:entity\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E79346B-A733-4A6B-A4E2-FCA3CFA75A7B}|DAL\\DAL.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\dal\\usuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E79346B-A733-4A6B-A4E2-FCA3CFA75A7B}|DAL\\DAL.csproj|solutionrelative:dal\\usuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E79346B-A733-4A6B-A4E2-FCA3CFA75A7B}|DAL\\DAL.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\dal\\tareadal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E79346B-A733-4A6B-A4E2-FCA3CFA75A7B}|DAL\\DAL.csproj|solutionrelative:dal\\tareadal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E79346B-A733-4A6B-A4E2-FCA3CFA75A7B}|DAL\\DAL.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\dal\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E79346B-A733-4A6B-A4E2-FCA3CFA75A7B}|DAL\\DAL.csproj|solutionrelative:dal\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DDE4F9-9ECD-40F6-9E9E-68898534EAAD}|BLL\\BLL.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\bll\\usuariobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DDE4F9-9ECD-40F6-9E9E-68898534EAAD}|BLL\\BLL.csproj|solutionrelative:bll\\usuariobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25DDE4F9-9ECD-40F6-9E9E-68898534EAAD}|BLL\\BLL.csproj|c:\\users\\educaccion\\desktop\\taskmanager\\taskmanager\\bll\\tareabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25DDE4F9-9ECD-40F6-9E9E-68898534EAAD}|BLL\\BLL.csproj|solutionrelative:bll\\tareabll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 271,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VerTareas.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\VerTareas.cs",
+              "RelativeDocumentMoniker": "UI\\VerTareas.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\VerTareas.cs",
+              "RelativeToolTip": "UI\\VerTareas.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAswHcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:55:31.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VerTareas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\VerTareas.cs",
+              "RelativeDocumentMoniker": "UI\\VerTareas.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\VerTareas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "UI\\VerTareas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:55:27.506Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AsignarTarea.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\AsignarTarea.cs",
+              "RelativeDocumentMoniker": "UI\\AsignarTarea.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\AsignarTarea.cs",
+              "RelativeToolTip": "UI\\AsignarTarea.cs",
+              "ViewState": "AQIAAKwAAAAAAAAAAAAQwL0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:55:14.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AsignarTarea.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\AsignarTarea.cs",
+              "RelativeDocumentMoniker": "UI\\AsignarTarea.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\AsignarTarea.cs [Dise\u00F1o]",
+              "RelativeToolTip": "UI\\AsignarTarea.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:55:11.257Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AgregarUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\AgregarUsuario.cs",
+              "RelativeDocumentMoniker": "UI\\AgregarUsuario.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\AgregarUsuario.cs",
+              "RelativeToolTip": "UI\\AgregarUsuario.cs",
+              "ViewState": "AQIAAMMAAAAAAAAAAAAqwNMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:54:53.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AgregarUsuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\AgregarUsuario.cs",
+              "RelativeDocumentMoniker": "UI\\AgregarUsuario.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\AgregarUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "UI\\AgregarUsuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:54:48.451Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Principal.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\Principal.cs",
+              "RelativeDocumentMoniker": "UI\\Principal.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\Principal.cs",
+              "RelativeToolTip": "UI\\Principal.cs",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAwwKsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:54:38.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Principal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\Principal.cs",
+              "RelativeDocumentMoniker": "UI\\Principal.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\Principal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "UI\\Principal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:54:35.562Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\Login.cs",
+              "RelativeDocumentMoniker": "UI\\Login.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\Login.cs",
+              "RelativeToolTip": "UI\\Login.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAIwHAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:54:22.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\Entity\\Usuario.cs",
+              "RelativeDocumentMoniker": "Entity\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\Entity\\Usuario.cs",
+              "RelativeToolTip": "Entity\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:54:05.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Tarea.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\Entity\\Tarea.cs",
+              "RelativeDocumentMoniker": "Entity\\Tarea.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\Entity\\Tarea.cs",
+              "RelativeToolTip": "Entity\\Tarea.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAADwvw0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:53:51.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsuarioDAL.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\DAL\\UsuarioDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\UsuarioDAL.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\DAL\\UsuarioDAL.cs",
+              "RelativeToolTip": "DAL\\UsuarioDAL.cs",
+              "ViewState": "AQIAAPIAAAAAAAAAAAAIwAUBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:53:31.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TareaDAL.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\DAL\\TareaDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\TareaDAL.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\DAL\\TareaDAL.cs",
+              "RelativeToolTip": "DAL\\TareaDAL.cs",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAuwJsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:53:24.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ConexionDB.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\DAL\\ConexionDB.cs",
+              "RelativeDocumentMoniker": "DAL\\ConexionDB.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\DAL\\ConexionDB.cs",
+              "RelativeToolTip": "DAL\\ConexionDB.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:53:16.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UsuarioBLL.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\BLL\\UsuarioBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\UsuarioBLL.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\BLL\\UsuarioBLL.cs",
+              "RelativeToolTip": "BLL\\UsuarioBLL.cs",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAmwKgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:52:59.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TareaBLL.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\BLL\\TareaBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\TareaBLL.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\BLL\\TareaBLL.cs",
+              "RelativeToolTip": "BLL\\TareaBLL.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAmwFQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:52:35.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Login.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\Login.cs",
+              "RelativeDocumentMoniker": "UI\\Login.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\Login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "UI\\Login.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T18:35:53.37Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
