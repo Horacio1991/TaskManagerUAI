@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\UI.csproj": {}
+    "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\UI\\UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\BLL\\BLL.csproj": {
+    "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\BLL\\BLL.csproj",
+        "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\Educaccion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\BLL\\obj\\",
+        "outputPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\DAL\\DAL.csproj"
+              "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\DAL\\DAL.csproj"
               },
-              "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\Entity\\Entity.csproj"
+              "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\Entity\\Entity.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\DAL\\DAL.csproj": {
+    "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\Educaccion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -115,8 +115,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\Entity\\Entity.csproj"
+              "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\Entity\\Entity.csproj"
               }
             }
           }
@@ -165,14 +165,14 @@
         }
       }
     },
-    "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\Entity\\Entity.csproj": {
+    "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\Entity\\Entity.csproj",
+        "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\Educaccion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\Entity\\obj\\",
+        "outputPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -236,14 +236,14 @@
         }
       }
     },
-    "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\UI.csproj": {
+    "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\UI\\UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\UI.csproj",
+        "projectUniqueName": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\UI\\UI.csproj",
         "projectName": "UI",
-        "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\UI.csproj",
+        "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\UI\\UI.csproj",
         "packagesPath": "C:\\Users\\Educaccion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\UI\\obj\\",
+        "outputPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -265,11 +265,11 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\BLL\\BLL.csproj": {
-                "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\BLL\\BLL.csproj"
+              "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\BLL\\BLL.csproj": {
+                "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\BLL\\BLL.csproj"
               },
-              "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\Entity\\Entity.csproj"
+              "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\Entity\\Entity.csproj"
               }
             }
           }

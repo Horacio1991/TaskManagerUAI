@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FREL+fqhp80=",
+  "dgSpecHash": "25JfgR4UkOk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\Entity\\Entity.csproj",
+  "projectFilePath": "C:\\Users\\Educaccion\\Desktop\\TaskManager\\TaskManager\\TaskManager\\Entity\\Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Educaccion\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Educaccion\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
