@@ -1,7 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E79346B-A733-4A6B-A4E2-FCA3CFA75A7B}|DAL\\DAL.csproj|c:\\users\\educaccion\\desktop\\nueva carpeta\\taskmanageruai\\dal\\tareadal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E79346B-A733-4A6B-A4E2-FCA3CFA75A7B}|DAL\\DAL.csproj|solutionrelative:dal\\tareadal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E79346B-A733-4A6B-A4E2-FCA3CFA75A7B}|DAL\\DAL.csproj|c:\\users\\educaccion\\desktop\\nueva carpeta\\taskmanageruai\\dal\\usuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E79346B-A733-4A6B-A4E2-FCA3CFA75A7B}|DAL\\DAL.csproj|solutionrelative:dal\\usuariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6AEAC8D-F319-4C51-89F3-8D3AD7AA90A9}|Mapper\\Mapper.csproj|c:\\users\\educaccion\\desktop\\nueva carpeta\\taskmanageruai\\mapper\\tareamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6AEAC8D-F319-4C51-89F3-8D3AD7AA90A9}|Mapper\\Mapper.csproj|solutionrelative:mapper\\tareamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6AEAC8D-F319-4C51-89F3-8D3AD7AA90A9}|Mapper\\Mapper.csproj|c:\\users\\educaccion\\desktop\\nueva carpeta\\taskmanageruai\\mapper\\usuariomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6AEAC8D-F319-4C51-89F3-8D3AD7AA90A9}|Mapper\\Mapper.csproj|solutionrelative:mapper\\usuariomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6AEAC8D-F319-4C51-89F3-8D3AD7AA90A9}|Mapper\\Mapper.csproj|c:\\users\\educaccion\\desktop\\nueva carpeta\\taskmanageruai\\mapper\\mapper.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E6AEAC8D-F319-4C51-89F3-8D3AD7AA90A9}|Mapper\\Mapper.csproj|solutionrelative:mapper\\mapper.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TareaDAL.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\DAL\\TareaDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\TareaDAL.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\DAL\\TareaDAL.cs",
+              "RelativeToolTip": "DAL\\TareaDAL.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAcwH0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T18:10:20.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioDAL.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\DAL\\UsuarioDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\UsuarioDAL.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\DAL\\UsuarioDAL.cs",
+              "RelativeToolTip": "DAL\\UsuarioDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T18:07:44.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TareaMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Mapper\\TareaMapper.cs",
+              "RelativeDocumentMoniker": "Mapper\\TareaMapper.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Mapper\\TareaMapper.cs",
+              "RelativeToolTip": "Mapper\\TareaMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T18:07:14.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Mapper",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Mapper\\Mapper.csproj",
+              "RelativeDocumentMoniker": "Mapper\\Mapper.csproj",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Mapper\\Mapper.csproj",
+              "RelativeToolTip": "Mapper\\Mapper.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-20T18:06:17.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuarioMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Mapper\\UsuarioMapper.cs",
+              "RelativeDocumentMoniker": "Mapper\\UsuarioMapper.cs",
+              "ToolTip": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Mapper\\UsuarioMapper.cs",
+              "RelativeToolTip": "Mapper\\UsuarioMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T18:06:30.969Z",
+              "EditorCaption": ""
             }
           ]
         },

@@ -107,3 +107,42 @@ C:\Users\Educaccion\Documents\TaskManager\TaskManager\UI\obj\Debug\net8.0-window
 C:\Users\Educaccion\Documents\TaskManager\TaskManager\UI\obj\Debug\net8.0-windows\UI.pdb
 C:\Users\Educaccion\Documents\TaskManager\TaskManager\UI\obj\Debug\net8.0-windows\UI.genruntimeconfig.cache
 C:\Users\Educaccion\Documents\TaskManager\TaskManager\UI\obj\Debug\net8.0-windows\ref\UI.dll
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\UI.exe
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\UI.dll.config
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\UI.deps.json
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\UI.runtimeconfig.json
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\UI.dll
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\UI.pdb
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\BLL.dll
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\DAL.dll
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\Entity.dll
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\Mapper.dll
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\BLL.pdb
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\Entity.pdb
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\DAL.pdb
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\bin\Debug\net8.0-windows\Mapper.pdb
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\UI.csproj.AssemblyReference.cache
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\PrincipalUI.txtModificarEmail.resources
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\PrincipalUI.AsignarTarea.resources
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\Login.Login.resources
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\PrincipalUI.Principal.resources
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\UI.Properties.Resources.resources
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\PrincipalUI.VerTareas.resources
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\UI.csproj.GenerateResource.cache
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\UI.AssemblyInfoInputs.cache
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\UI.AssemblyInfo.cs
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\UI.csproj.CoreCompileInputs.cache
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\UI.sourcelink.json
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\UI.csproj.Up2Date
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\UI.dll
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\refint\UI.dll
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\UI.pdb
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\UI.genruntimeconfig.cache
+C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\obj\Debug\net8.0-windows\ref\UI.dll

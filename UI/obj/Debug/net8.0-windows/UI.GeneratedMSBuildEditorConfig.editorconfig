@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UI
-build_property.ProjectDir = C:\Users\Educaccion\Documents\TaskManager\TaskManager\UI\
+build_property.ProjectDir = C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\UI\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

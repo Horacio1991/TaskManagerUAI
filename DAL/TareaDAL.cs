@@ -1,6 +1,9 @@
-﻿using System.Data.SqlClient;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Transactions;
 using Entity;
+using Mapper;
 
 namespace DAL
 {
@@ -13,17 +16,19 @@ namespace DAL
             _conexionDB = new ConexionDB();
         }
 
-        public List<Tarea> ObtenerTareasPorEmpleado(int empleadoId) //Para cargar las tareas en el DataGridView del empleado seleccionado
+        // Obtener tareas por empleado
+        public List<Tarea> ObtenerTareasPorEmpleado(int empleadoId)
         {
             List<Tarea> tareas = new List<Tarea>();
+            string query = @"SELECT TareaId, Titulo, Descripcion, FechaSolicitada, 
+                                    FechaEsperadaFinalizacion, FechaFinalizacion, 
+                                    EstadoTareaId, UsuarioId 
+                             FROM Tarea 
+                             WHERE UsuarioId = @empleadoId";
 
             using (SqlConnection conn = new SqlConnection(_conexionDB.ObtenerCadenaConexion()))
             {
                 conn.Open();
-                string query = "SELECT TareaId, Titulo, Descripcion, FechaSolicitada, " +
-                               "FechaEsperadaFinalizacion, FechaFinalizacion, EstadoTareaId, UsuarioId " +
-                               "FROM Tarea WHERE UsuarioId = @empleadoId";
-
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@empleadoId", empleadoId);
@@ -32,18 +37,7 @@ namespace DAL
                     {
                         while (reader.Read())
                         {
-                            Tarea tarea = new Tarea
-                            {
-                                TareaId = reader.GetInt32(reader.GetOrdinal("TareaId")),
-                                Titulo = reader.GetString(reader.GetOrdinal("Titulo")),
-                                Descripcion = reader.GetString(reader.GetOrdinal("Descripcion")),
-                                FechaSolicitada = reader.GetDateTime(reader.GetOrdinal("FechaSolicitada")),
-                                FechaEsperadaFinalizacion = reader.GetDateTime(reader.GetOrdinal("FechaEsperadaFinalizacion")),
-                                FechaFinalizacion = reader.IsDBNull(reader.GetOrdinal("FechaFinalizacion")) ? (DateTime?)null : reader.GetDateTime(reader.GetOrdinal("FechaFinalizacion")),
-                                EstadoTareaId = reader.GetInt32(reader.GetOrdinal("EstadoTareaId")),
-                                UsuarioId = reader.GetInt32(reader.GetOrdinal("UsuarioId"))
-                            };
-                            tareas.Add(tarea);
+                            tareas.Add(TareaMapper.Map(reader)); // Usamos el Mapper
                         }
                     }
                 }
@@ -51,39 +45,46 @@ namespace DAL
             return tareas;
         }
 
+        // Asignar una nueva tarea
         public void AsignarTarea(int usuarioId, string titulo, string descripcion, DateTime fechaEsperadaFinalizacion)
         {
-            string query = "INSERT INTO Tarea (Titulo, Descripcion, FechaSolicitada, FechaEsperadaFinalizacion, EstadoTareaId, UsuarioId) " +
-                           "VALUES (@Titulo, @Descripcion, GETDATE(), @FechaEsperadaFinalizacion, 1, @UsuarioId)";
+            string query = @"INSERT INTO Tarea (Titulo, Descripcion, FechaSolicitada, 
+                                                 FechaEsperadaFinalizacion, EstadoTareaId, UsuarioId) 
+                             VALUES (@Titulo, @Descripcion, GETDATE(), 
+                                     @FechaEsperadaFinalizacion, 1, @UsuarioId)";
 
             using (TransactionScope transaction = new TransactionScope())
             {
                 using (SqlConnection connection = new SqlConnection(_conexionDB.ObtenerCadenaConexion()))
                 {
-                    SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@Titulo", titulo);
-                    command.Parameters.AddWithValue("@Descripcion", descripcion);
-                    command.Parameters.AddWithValue("@FechaEsperadaFinalizacion", fechaEsperadaFinalizacion);
-                    command.Parameters.AddWithValue("@UsuarioId", usuarioId);
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@Titulo", titulo);
+                        cmd.Parameters.AddWithValue("@Descripcion", descripcion);
+                        cmd.Parameters.AddWithValue("@FechaEsperadaFinalizacion", fechaEsperadaFinalizacion);
+                        cmd.Parameters.AddWithValue("@UsuarioId", usuarioId);
 
-                    connection.Open();
-                    command.ExecuteNonQuery();
+                        connection.Open();
+                        cmd.ExecuteNonQuery();
+                    }
                 }
                 transaction.Complete();
             }
         }
 
+        // Obtener tareas por sector
         public List<Tarea> ObtenerTareasPorSector(int sectorId)
         {
             List<Tarea> tareas = new List<Tarea>();
+            string query = @"SELECT TareaId, Titulo, Descripcion, FechaSolicitada, 
+                                    FechaEsperadaFinalizacion, FechaFinalizacion, 
+                                    EstadoTareaId, UsuarioId 
+                             FROM Tarea 
+                             WHERE UsuarioId IN (SELECT UsuarioId FROM Usuario WHERE SectorId = @SectorId)";
 
             using (SqlConnection conn = new SqlConnection(_conexionDB.ObtenerCadenaConexion()))
             {
                 conn.Open();
-                string query = "SELECT TareaId, Titulo, Descripcion, FechaSolicitada, " +
-                               "FechaEsperadaFinalizacion, FechaFinalizacion, EstadoTareaId, UsuarioId " +
-                               "FROM Tarea WHERE UsuarioId IN (SELECT UsuarioId FROM Usuario WHERE SectorId = @SectorId)";
-
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@SectorId", sectorId);
@@ -92,18 +93,7 @@ namespace DAL
                     {
                         while (reader.Read())
                         {
-                            Tarea tarea = new Tarea
-                            {
-                                TareaId = reader.GetInt32(reader.GetOrdinal("TareaId")),
-                                Titulo = reader.GetString(reader.GetOrdinal("Titulo")),
-                                Descripcion = reader.GetString(reader.GetOrdinal("Descripcion")),
-                                FechaSolicitada = reader.GetDateTime(reader.GetOrdinal("FechaSolicitada")),
-                                FechaEsperadaFinalizacion = reader.GetDateTime(reader.GetOrdinal("FechaEsperadaFinalizacion")),
-                                FechaFinalizacion = reader.IsDBNull(reader.GetOrdinal("FechaFinalizacion")) ? (DateTime?)null : reader.GetDateTime(reader.GetOrdinal("FechaFinalizacion")),
-                                EstadoTareaId = reader.GetInt32(reader.GetOrdinal("EstadoTareaId")),
-                                UsuarioId = reader.GetInt32(reader.GetOrdinal("UsuarioId"))
-                            };
-                            tareas.Add(tarea);
+                            tareas.Add(TareaMapper.Map(reader)); // Usamos el Mapper
                         }
                     }
                 }
@@ -111,6 +101,7 @@ namespace DAL
             return tareas;
         }
 
+        // Completar una tarea
         public void CompletarTarea(int tareaId)
         {
             string query = "UPDATE Tarea SET EstadoTareaId = 2, FechaFinalizacion = GETDATE() WHERE TareaId = @TareaId";
@@ -119,11 +110,13 @@ namespace DAL
             {
                 using (SqlConnection connection = new SqlConnection(_conexionDB.ObtenerCadenaConexion()))
                 {
-                    SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@TareaId", tareaId);
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@TareaId", tareaId);
 
-                    connection.Open();
-                    command.ExecuteNonQuery();
+                        connection.Open();
+                        cmd.ExecuteNonQuery();
+                    }
                 }
                 transaction.Complete();
             }

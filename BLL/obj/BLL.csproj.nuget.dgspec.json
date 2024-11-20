@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\BLL\\BLL.csproj": {}
+    "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\BLL\\BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\BLL\\BLL.csproj": {
+    "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\BLL\\BLL.csproj",
+        "projectPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\Educaccion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\BLL\\obj\\",
+        "outputPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\DAL\\DAL.csproj"
+              "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\DAL\\DAL.csproj"
               },
-              "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\Entity\\Entity.csproj"
+              "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Entity\\Entity.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\DAL\\DAL.csproj": {
+    "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\Educaccion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -115,8 +115,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\Entity\\Entity.csproj"
+              "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Entity\\Entity.csproj"
+              },
+              "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Mapper\\Mapper.csproj": {
+                "projectPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Mapper\\Mapper.csproj"
               }
             }
           }
@@ -165,14 +168,14 @@
         }
       }
     },
-    "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\Entity\\Entity.csproj": {
+    "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\Entity\\Entity.csproj",
+        "projectPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\Educaccion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\Entity\\obj\\",
+        "outputPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -216,6 +219,75 @@
               "version": "[4.8.6, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Mapper\\Mapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Mapper\\Mapper.csproj",
+        "projectName": "Mapper",
+        "projectPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Mapper\\Mapper.csproj",
+        "packagesPath": "C:\\Users\\Educaccion\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Mapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Educaccion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Entity\\Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",

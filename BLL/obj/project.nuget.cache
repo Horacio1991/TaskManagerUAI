@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QNZEieV7MXg=",
+  "dgSpecHash": "GhitGFMJuYs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\BLL\\BLL.csproj",
+  "projectFilePath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Educaccion\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Educaccion\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

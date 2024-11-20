@@ -476,11 +476,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\Entity\\Entity.csproj",
+      "projectUniqueName": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Entity\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\Entity\\Entity.csproj",
+      "projectPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Entity\\Entity.csproj",
       "packagesPath": "C:\\Users\\Educaccion\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\Entity\\obj\\",
+      "outputPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -230,6 +230,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Entity": "1.0.0",
+          "Mapper": "1.0.0",
           "System.Configuration.ConfigurationManager": "8.0.0",
           "System.Data.SqlClient": "4.8.6"
         },
@@ -251,6 +252,19 @@
         },
         "runtime": {
           "bin/placeholder/Entity.dll": {}
+        }
+      },
+      "Mapper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Mapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mapper.dll": {}
         }
       }
     }
@@ -688,6 +702,11 @@
       "type": "project",
       "path": "../Entity/Entity.csproj",
       "msbuildProject": "../Entity/Entity.csproj"
+    },
+    "Mapper/1.0.0": {
+      "type": "project",
+      "path": "../Mapper/Mapper.csproj",
+      "msbuildProject": "../Mapper/Mapper.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -704,11 +723,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\UI\\UI.csproj",
+      "projectUniqueName": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\UI\\UI.csproj",
       "projectName": "UI",
-      "projectPath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\UI\\UI.csproj",
+      "projectPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\UI\\UI.csproj",
       "packagesPath": "C:\\Users\\Educaccion\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\UI\\obj\\",
+      "outputPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -730,11 +749,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\BLL\\BLL.csproj": {
-              "projectPath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\BLL\\BLL.csproj"
+            "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\BLL\\BLL.csproj"
             },
-            "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\Educaccion\\Documents\\TaskManager\\TaskManager\\Entity\\Entity.csproj"
+            "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\Educaccion\\Desktop\\Nueva carpeta\\TaskManagerUAI\\Entity\\Entity.csproj"
             }
           }
         }

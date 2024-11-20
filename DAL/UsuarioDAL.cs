@@ -1,6 +1,9 @@
-﻿using System.Data.SqlClient;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Transactions;
 using Entity;
+using Mapper;
 
 namespace DAL
 {
@@ -13,10 +16,11 @@ namespace DAL
             _conexion = new ConexionDB();
         }
 
-        public Usuario ValidarUsuario(string email, string password) // Para el login
+        // Validar usuario para el login
+        public Usuario ValidarUsuario(string email, string password)
         {
             Usuario usuario = null;
-            string query = "SELECT UsuarioId, Nombre, EsAdministrador, SectorId FROM Usuario WHERE Email = @Email AND Password = @Password";
+            string query = "SELECT UsuarioId, Nombre, Email, Password, EsAdministrador, SectorId FROM Usuario WHERE Email = @Email AND Password = @Password";
 
             using (SqlConnection connection = new SqlConnection(_conexion.ObtenerCadenaConexion()))
             {
@@ -30,13 +34,7 @@ namespace DAL
                     {
                         if (reader.Read())
                         {
-                            usuario = new Usuario
-                            {
-                                UsuarioId = Convert.ToInt32(reader["UsuarioId"]),
-                                Nombre = reader["Nombre"].ToString(),
-                                EsAdministrador = Convert.ToBoolean(reader["EsAdministrador"]),
-                                SectorId = Convert.ToInt32(reader["SectorId"])
-                            };
+                            usuario = UsuarioMapper.Map(reader); // Usamos el Mapper
                         }
                     }
                 }
@@ -45,17 +43,17 @@ namespace DAL
             return usuario;
         }
 
-        public List<Usuario> ObtenerUsuariosPorSector(int sectorId) //Para cargar empleados en el ComboBox de las tareas a asignar
+        // Obtener usuarios por sector (Para cargar empleados en el ComboBox de las tareas a asignar)
+        public List<Usuario> ObtenerUsuariosPorSector(int sectorId)
         {
             List<Usuario> usuarios = new List<Usuario>();
+            string query = @"SELECT UsuarioId, Nombre, Email, Password, EsAdministrador, SectorId 
+                             FROM Usuario 
+                             WHERE SectorId = @SectorId AND EsAdministrador = 0";
 
             using (SqlConnection conn = new SqlConnection(_conexion.ObtenerCadenaConexion()))
             {
                 conn.Open();
-                string query = @"SELECT UsuarioId, Nombre, Email, EsAdministrador, SectorId
-                                FROM Usuario
-                                WHERE SectorId = @SectorId AND EsAdministrador = 0";
-
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@SectorId", sectorId);
@@ -64,15 +62,7 @@ namespace DAL
                     {
                         while (reader.Read())
                         {
-                            Usuario usuario = new Usuario
-                            {
-                                UsuarioId = reader.GetInt32(0),
-                                Nombre = reader.GetString(1),
-                                Email = reader.GetString(2),
-                                EsAdministrador = reader.GetBoolean(3),
-                                SectorId = reader.GetInt32(4)
-                            };
-                            usuarios.Add(usuario);
+                            usuarios.Add(UsuarioMapper.Map(reader)); // Usamos el Mapper
                         }
                     }
                 }
@@ -81,7 +71,8 @@ namespace DAL
             return usuarios;
         }
 
-        public void AgregarUsuario(Usuario usuario) //Agregar usuarios al sector del administrador
+        // Agregar un nuevo usuario
+        public void AgregarUsuario(Usuario usuario)
         {
             string query = "INSERT INTO Usuario (Nombre, Email, Password, EsAdministrador, SectorId) " +
                            "VALUES (@Nombre, @Email, @Password, @EsAdministrador, @SectorId)";
@@ -106,6 +97,7 @@ namespace DAL
             }
         }
 
+        // Modificar usuario por email
         public void ModificarUsuarioPorEmail(Usuario usuario)
         {
             string query = "UPDATE Usuario SET";
@@ -131,22 +123,24 @@ namespace DAL
                 using (SqlConnection connection = new SqlConnection(_conexion.ObtenerCadenaConexion()))
                 {
                     connection.Open();
-                    SqlCommand cmd = new SqlCommand(query, connection);
+                    using (SqlCommand cmd = new SqlCommand(query, connection))
+                    {
+                        if (actualizarNombre)
+                            cmd.Parameters.AddWithValue("@Nombre", usuario.Nombre);
 
-                    if (actualizarNombre)
-                        cmd.Parameters.AddWithValue("@Nombre", usuario.Nombre);
+                        if (actualizarPassword)
+                            cmd.Parameters.AddWithValue("@Password", usuario.Password);
 
-                    if (actualizarPassword)
-                        cmd.Parameters.AddWithValue("@Password", usuario.Password);
+                        cmd.Parameters.AddWithValue("@Email", usuario.Email);
 
-                    cmd.Parameters.AddWithValue("@Email", usuario.Email);
-
-                    cmd.ExecuteNonQuery();
+                        cmd.ExecuteNonQuery();
+                    }
                 }
                 transaction.Complete();
             }
         }
 
+        // Eliminar usuario y sus tareas asociadas
         public void EliminarUsuarioConTareas(string email)
         {
             string queryEliminarTareas = "DELETE FROM Tarea WHERE UsuarioId = (SELECT UsuarioId FROM Usuario WHERE Email = @Email)";
