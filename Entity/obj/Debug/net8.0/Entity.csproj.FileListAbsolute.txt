@@ -48,3 +48,16 @@ C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\Entity\obj\Debug\net8.0
 C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\Entity\obj\Debug\net8.0\refint\Entity.dll
 C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\Entity\obj\Debug\net8.0\Entity.pdb
 C:\Users\Educaccion\Desktop\Nueva carpeta\TaskManagerUAI\Entity\obj\Debug\net8.0\ref\Entity.dll
+C:\Users\hory_\OneDrive\Escritorio\TaskManagerUAI\Entity\bin\Debug\net8.0\Entity.deps.json
+C:\Users\hory_\OneDrive\Escritorio\TaskManagerUAI\Entity\bin\Debug\net8.0\Entity.dll
+C:\Users\hory_\OneDrive\Escritorio\TaskManagerUAI\Entity\bin\Debug\net8.0\Entity.pdb
+C:\Users\hory_\OneDrive\Escritorio\TaskManagerUAI\Entity\obj\Debug\net8.0\Entity.csproj.AssemblyReference.cache
+C:\Users\hory_\OneDrive\Escritorio\TaskManagerUAI\Entity\obj\Debug\net8.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hory_\OneDrive\Escritorio\TaskManagerUAI\Entity\obj\Debug\net8.0\Entity.AssemblyInfoInputs.cache
+C:\Users\hory_\OneDrive\Escritorio\TaskManagerUAI\Entity\obj\Debug\net8.0\Entity.AssemblyInfo.cs
+C:\Users\hory_\OneDrive\Escritorio\TaskManagerUAI\Entity\obj\Debug\net8.0\Entity.csproj.CoreCompileInputs.cache
+C:\Users\hory_\OneDrive\Escritorio\TaskManagerUAI\Entity\obj\Debug\net8.0\Entity.sourcelink.json
+C:\Users\hory_\OneDrive\Escritorio\TaskManagerUAI\Entity\obj\Debug\net8.0\Entity.dll
+C:\Users\hory_\OneDrive\Escritorio\TaskManagerUAI\Entity\obj\Debug\net8.0\refint\Entity.dll
+C:\Users\hory_\OneDrive\Escritorio\TaskManagerUAI\Entity\obj\Debug\net8.0\Entity.pdb
+C:\Users\hory_\OneDrive\Escritorio\TaskManagerUAI\Entity\obj\Debug\net8.0\ref\Entity.dll

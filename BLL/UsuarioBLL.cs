@@ -1,7 +1,9 @@
-﻿using System.Transactions;
+﻿using System;
+using System.Collections.Generic;
+using System.Transactions;
+using System.Text.RegularExpressions;
 using Entity;
 using DAL;
-using System.Text.RegularExpressions;
 
 namespace BLL
 {
@@ -15,7 +17,8 @@ namespace BLL
             _usuarioDal = new UsuarioDAL();
         }
 
-        public Usuario ValidarUsuario(string email, string password) //Para el login
+        // Validar usuario para el login
+        public Usuario ValidarUsuario(string email, string password)
         {
             try
             {
@@ -30,7 +33,8 @@ namespace BLL
             }
         }
 
-        public List<Usuario> ObtenerUsuariosPorSector(int sectorId) // Para cargar empleados en el ComboBox de las tareas
+        // Obtener usuarios por sector (para cargar los usuarios del sector al que pertenece el administrador)
+        public List<Usuario> ObtenerUsuariosPorSector(int sectorId)
         {
             try
             {
@@ -45,19 +49,43 @@ namespace BLL
             }
         }
 
+        // Guardar usuario en memoria
         public void GuardarUsuarioEnMemoria(Usuario usuario)
         {
+            // Validar los datos del usuario antes de agregarlo
+            ValidarDatosUsuario(usuario, esModificacion: false);
+
+            // Verificar duplicados en memoria
+            if (_usuariosEnMemoria.Exists(u => u.Email == usuario.Email))
+                throw new Exception("El email ya está registrado en memoria.");
+
+            // Validar si el email ya está registrado en la base de datos
+            ValidarEmailExistente(usuario.Email);
+
             _usuariosEnMemoria.Add(usuario);
         }
 
+        // Confirmar usuarios en memoria y guardarlos en la base de datos
         public void ConfirmarUsuarios()
         {
-            // Validar que todos los usuarios en memoria tengan los campos correctamente llenos
+            // Validar duplicados en la lista en memoria
+            var emailsDuplicados = _usuariosEnMemoria
+                .GroupBy(u => u.Email)
+                .Where(grupo => grupo.Count() > 1)
+                .Select(grupo => grupo.Key)
+                .ToList();
+
+            if (emailsDuplicados.Any())
+            {
+                throw new Exception($"Error: Los siguientes emails están duplicados en memoria: {string.Join(", ", emailsDuplicados)}.");
+            }
+
             foreach (var usuario in _usuariosEnMemoria)
             {
                 try
                 {
                     ValidarDatosUsuario(usuario, esModificacion: false);
+                    ValidarEmailExistente(usuario.Email);
                 }
                 catch (Exception ex)
                 {
@@ -77,6 +105,7 @@ namespace BLL
             _usuariosEnMemoria.Clear();
         }
 
+        // Modificar usuario por email
         public void ModificarUsuarioPorEmail(Usuario usuario)
         {
             if (string.IsNullOrEmpty(usuario.Email))
@@ -89,7 +118,7 @@ namespace BLL
                     try
                     {
                         _usuarioDal.ModificarUsuarioPorEmail(usuario);
-                        transaction.Complete(); // Completa la transacción si no hay errores
+                        transaction.Complete();
                     }
                     catch (Exception ex)
                     {
@@ -103,7 +132,7 @@ namespace BLL
             }
         }
 
-
+        // Eliminar usuario y sus tareas asociadas
         public void EliminarUsuarioConTareas(string email)
         {
             using (TransactionScope transaction = new TransactionScope())
@@ -111,7 +140,7 @@ namespace BLL
                 try
                 {
                     _usuarioDal.EliminarUsuarioConTareas(email);
-                    transaction.Complete(); // Completa la transacción si no hay errores
+                    transaction.Complete();
                 }
                 catch (Exception ex)
                 {
@@ -120,7 +149,16 @@ namespace BLL
             }
         }
 
+        // Validar email existente
+        private void ValidarEmailExistente(string email)
+        {
+            if (_usuarioDal.ExisteEmail(email))
+            {
+                throw new Exception("El email ya está registrado en la base de datos.");
+            }
+        }
 
+        // Validar email
         private void ValidarEmail(string email)
         {
             if (string.IsNullOrWhiteSpace(email) || email == "EMAIL")
@@ -131,12 +169,14 @@ namespace BLL
                 throw new Exception("El formato del email no es válido.");
         }
 
+        // Validar campos vacíos
         private void ValidarCampoVacio(string campo, string nombreCampo, string placeholder)
         {
             if (string.IsNullOrWhiteSpace(campo) || campo == placeholder)
                 throw new Exception($"El campo {nombreCampo} no puede estar vacío o tener el texto '{placeholder}'.");
         }
 
+        // Validar datos del usuario
         private void ValidarDatosUsuario(Usuario usuario, bool esModificacion)
         {
             const string placeholderNombre = "NOMBRE";

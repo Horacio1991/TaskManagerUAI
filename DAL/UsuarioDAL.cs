@@ -34,7 +34,7 @@ namespace DAL
                     {
                         if (reader.Read())
                         {
-                            usuario = UsuarioMapper.Map(reader); // Usamos el Mapper
+                            usuario = UsuarioMapper.Map(reader); 
                         }
                     }
                 }
@@ -62,7 +62,7 @@ namespace DAL
                     {
                         while (reader.Read())
                         {
-                            usuarios.Add(UsuarioMapper.Map(reader)); // Usamos el Mapper
+                            usuarios.Add(UsuarioMapper.Map(reader));
                         }
                     }
                 }
@@ -167,5 +167,22 @@ namespace DAL
                 transaction.Complete();
             }
         }
+
+        public bool ExisteEmail(string email)
+        {
+            string query = "SELECT COUNT(*) FROM Usuario WHERE Email = @Email";
+
+            using (SqlConnection conn = new SqlConnection(_conexion.ObtenerCadenaConexion()))
+            {
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Email", email);
+                    int count = (int)cmd.ExecuteScalar();
+                    return count > 0;
+                }
+            }
+        }
+
     }
 }

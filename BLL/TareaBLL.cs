@@ -1,4 +1,6 @@
-﻿using System.Transactions;
+﻿using System;
+using System.Collections.Generic;
+using System.Transactions;
 using DAL;
 using Entity;
 
@@ -14,6 +16,7 @@ namespace BLL
             _tareaDal = new TareaDAL();
         }
 
+        // Obtener las tareas de un empleado en especifico
         public List<Tarea> ObtenerTareasPorEmpleado(int empleadoId)
         {
             if (empleadoId <= 0)
@@ -29,8 +32,12 @@ namespace BLL
             }
         }
 
+        // Guardar tarea en memoria para despues confirmar cambios
         public void GuardarTareaEnMemoria(Tarea tarea)
         {
+            // Validar campos antes de guardar
+            ValidarTarea(tarea);
+
             // Validar que la fecha sea actual o futura
             if (tarea.FechaEsperadaFinalizacion < DateTime.Now.Date)
             {
@@ -40,14 +47,23 @@ namespace BLL
             _tareasEnMemoria.Add(tarea);
         }
 
+        // Confirmar todas las tareas en memoria y guardarlas en la base de datos
         public void ConfirmarTareas()
         {
-            // Validar todas las fechas antes de confirmar
             foreach (var tarea in _tareasEnMemoria)
             {
-                if (tarea.FechaEsperadaFinalizacion < DateTime.Now.Date)
+                try
                 {
-                    throw new Exception($"Error: La tarea '{tarea.Titulo}' tiene una fecha anterior a la actual. Ninguna tarea ha sido confirmada.");
+                    ValidarTarea(tarea);
+
+                    if (tarea.FechaEsperadaFinalizacion < DateTime.Now.Date)
+                    {
+                        throw new Exception($"La tarea '{tarea.Titulo}' tiene una fecha anterior a la actual.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception($"Error al confirmar tareas: {ex.Message}. Ninguna tarea ha sido confirmada.");
                 }
             }
 
@@ -62,30 +78,26 @@ namespace BLL
             _tareasEnMemoria.Clear();
         }
 
+        // Asignar una nueva tarea a un empleado
         public void AsignarTarea(int empleadoId, string titulo, string descripcion, DateTime fechaLimite)
         {
             if (empleadoId <= 0)
                 throw new ArgumentException("El ID del empleado no es válido.");
 
-            if (string.IsNullOrEmpty(titulo))
-                throw new ArgumentException("El título no puede estar vacío.");
+            // Crear una instancia de tarea para validarla
+            var tarea = new Tarea
+            {
+                UsuarioId = empleadoId,
+                Titulo = titulo,
+                Descripcion = descripcion,
+                FechaEsperadaFinalizacion = fechaLimite
+            };
 
-            if (string.IsNullOrEmpty(descripcion))
-                throw new ArgumentException("La descripción no puede estar vacía.");
-
-            if (fechaLimite < DateTime.Now.Date)
-                throw new ArgumentException("La fecha límite debe ser la actual o una posterior.");
+            // Validar antes de guardar
+            ValidarTarea(tarea);
 
             try
             {
-                var tarea = new Tarea
-                {
-                    UsuarioId = empleadoId,
-                    Titulo = titulo,
-                    Descripcion = descripcion,
-                    FechaEsperadaFinalizacion = fechaLimite
-                };
-
                 GuardarTareaEnMemoria(tarea);
             }
             catch (Exception ex)
@@ -94,6 +106,7 @@ namespace BLL
             }
         }
 
+        // Obtener tareas por sector (Para cargar tareas en el DataGridView)
         public List<Tarea> ObtenerTareasPorSector(int sectorId)
         {
             if (sectorId <= 0)
@@ -109,6 +122,7 @@ namespace BLL
             }
         }
 
+        // Completar una tarea
         public void CompletarTarea(int tareaId)
         {
             if (tareaId <= 0)
@@ -119,7 +133,7 @@ namespace BLL
                 try
                 {
                     _tareaDal.CompletarTarea(tareaId);
-                    transaction.Complete(); // Completa la transacción si no hay errores
+                    transaction.Complete();
                 }
                 catch (Exception ex)
                 {
@@ -128,5 +142,17 @@ namespace BLL
             }
         }
 
+        // Validar tarea (Título, Descripción, Fecha)
+        private void ValidarTarea(Tarea tarea)
+        {
+            const string placeholderTitulo = "Título";
+            const string placeholderDescripcion = "Tarea a realizar";
+
+            if (string.IsNullOrWhiteSpace(tarea.Titulo) || tarea.Titulo == placeholderTitulo)
+                throw new ArgumentException("El título no puede estar vacío o tener el texto predeterminado.");
+
+            if (string.IsNullOrWhiteSpace(tarea.Descripcion) || tarea.Descripcion == placeholderDescripcion)
+                throw new ArgumentException("La descripción no puede estar vacía o tener el texto predeterminado.");
+        }
     }
 }

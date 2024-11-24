@@ -37,7 +37,7 @@ namespace DAL
                     {
                         while (reader.Read())
                         {
-                            tareas.Add(TareaMapper.Map(reader)); // Usamos el Mapper
+                            tareas.Add(TareaMapper.Map(reader)); 
                         }
                     }
                 }
@@ -93,7 +93,7 @@ namespace DAL
                     {
                         while (reader.Read())
                         {
-                            tareas.Add(TareaMapper.Map(reader)); // Usamos el Mapper
+                            tareas.Add(TareaMapper.Map(reader)); 
                         }
                     }
                 }

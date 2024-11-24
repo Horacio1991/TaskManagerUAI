@@ -139,7 +139,10 @@
           "System.Data.SqlClient": "4.8.6"
         },
         "runtime": {
-          "Entity.dll": {}
+          "Entity.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Mapper/1.0.0": {
@@ -147,7 +150,10 @@
           "Entity": "1.0.0"
         },
         "runtime": {
-          "Mapper.dll": {}
+          "Mapper.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
